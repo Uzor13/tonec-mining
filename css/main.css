@@ -43,6 +43,7 @@ a {
     padding: .7rem 1.4rem;
 }
 
+
 .navbar {
     gap: 1rem !important;
     background: var(--accent-color) !important;
@@ -54,14 +55,14 @@ a {
     position: absolute !important;
 }
 
-/*   HERO SECTION  */
+   /*HERO SECTION  */
 
 .hero {
     height: 620px;
 }
 
 .hero-content {
-    height: 620px;
+    min-height: 620px;
 }
 
 .hero-content__main {
