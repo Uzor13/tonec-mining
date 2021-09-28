@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light: #fff;
+    --accent-color: #ffd300;
+    --dark: #202324;
+    --light-grey: #EDF1F2;
+    --accent-color-dark: #e6be00;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Livvic', sans-serif;
+    color: var(--dark);
+}
+
+p, span, button, div, a, li {
+    font-family: 'Rubik', serif;
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-main {
+    border: none;
+    outline: none;
+    background: var(--accent-color);
+    color: var(--dark);
+    padding: .7rem 1.4rem;
+}
+
+.navbar {
+    gap: 1rem !important;
+    background: var(--accent-color) !important;
+    height: 80px !important;
+}
+
+.main-nav {
+    width: 50% !important;
+    position: absolute !important;
+}
+
+/*   HERO SECTION  */
+
+.hero {
+    height: 620px;
+}
+
+.hero-content {
+    height: 620px;
+}
+
+.hero-content__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100% !important;
+}
+
+.hero-content__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.hero-content__text h1 {
+    font-size: 4rem;
+}
+
+/*  ABOUT SECTION  */
+
+.about {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.about-content__heading h1 {
+    font-size: 1.7rem;
+}
+
+.number-container {
+    display: inline-block;
+    text-align: center;
+    height: 55px;
+    width: 55px;
+    padding-top: 5px;
+    margin-left: .4rem;
+    border-radius: 100%;
+    border: 2px solid var(--accent-color);
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.about-content__text {
+    text-align: justify;
+}
+
+/*  GALLERY SECTION  */
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+   
+    place-items: center;
+    gap: 1rem;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.image:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/*  VALUES  */
+
+.values {
+    margin-top: 5rem;
+}
+
+.values-heading {
+    width: 40%;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+.number-container__heading {
+    font-size: 1.8rem;
+}
+
+.values-list {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.fa-dot-circle {
+    color: var(--accent-color);
+}
+
+/*  FOOTER  */
+
+footer {
+    background: var(--accent-color-dark);
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*  PRODUCTS PAGE SECTION  */
+.products-text__heading {
+    border-left: 4px solid var(--accent-color);
+    padding-left: .6rem;
+    margin-bottom: 2rem;
+}
+
+
+/*  SERVICES PAGE SECTION  */
+.card-img {
+    width: 180px !important;
+}
+
+.card-img2 {
+    width: 268px;
+}
+
+.card {
+     transition: all .3s ease;
+}
+
+.card:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+/*  CONTACT PAGE SECTION  */
+
+.contact-wrapper {
+    position: relative;
+}
+
+.top {
+    background: var(--accent-color);
+    height: 50vh;
+    width: 100%;
+}
+
+.bottom {
+    background: var(--dark);
+    height: 50vh;
+    width: 100%;
+}
+
+.contact-form {
+    background: var(--light);
+    height: 550px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 3;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+    border-radius: .4rem;
+    padding: 2rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    gap: 2rem;
+}
+
+.form-btn {
+    background: var(--accent-color);
+    width: 100% !important;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
